@@ -251,7 +251,7 @@ header {
   color: #f42;
   line-height: 1.1;
   margin-bottom: 24px;
-  letter-spacing: -.015em;
+  letter-spacing: -0.015em;
 }
 
 .latest-news-articles {
@@ -299,4 +299,24 @@ header {
 .article-description > h6 {
   color: #aaa;
   font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .latest-news-articles {
+    grid-template-columns: repeat(3, minmax(229px, 1fr));
+    grid-auto-rows: minmax(219px, 244px);
+    /* gap: 15px; */
+    gap: 0;
+  }
+
+  .article-container {
+    flex-direction: column;
+  }
+
+  .article-image {
+    /* min-height:114px; */
+    height: 40%;
+    flex: 1 1 auto;
+    width: 100%;
+  }
 }
