@@ -70,6 +70,7 @@ main {
 
 .nav-bottom-right-links {
   display: flex;
+  margin-left: auto;
 }
 
 .nav-bottom-right-links > a {
@@ -89,8 +90,7 @@ main {
 }
 
 .nav-bottom-left-links {
-  display: flex;
-  visibility: hidden;
+  display: none;
   align-items: center;
   height: 100%;
 }
@@ -135,22 +135,10 @@ main {
   color: white;
 }
 
-.announcement {
-  height: 30px;
-
- 
-
-  width: 100vh;
-}
-
-.announcement-2 {
-  width: 100%;
-  height: 30px;
-  background-color: #fd3;
-  box-shadow: 0 16px 48px rgba(0,0,0,.15);
-  font-family: "Roboto", sans-serif;
-  line-height: 30px;
-  font-size: 10px;
+@media (max-width: 811px) {
+  .nav-top-right-links {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -168,7 +156,7 @@ main {
   }
 
   .nav-bottom-left-links {
-    visibility: visible;
+    display: flex;
   }
 }
 
