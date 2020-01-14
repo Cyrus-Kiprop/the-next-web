@@ -187,17 +187,6 @@ header {
   background-size: cover;
 }
 
-.cover-story-gradient {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-
-  height: 100%;
-  width: 100%;
-  /* z-index: 2; */
-  text-decoration: none;
-}
-
 .cover-date {
   display: flex;
   justify-content: space-between;
@@ -235,4 +224,79 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+/* End of header section */
+/* Start of latest news section */
+
+.content-area {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.content-container {
+  margin: 60px auto 0;
+  max-width: 1192px;
+  height: 200px;
+  padding: 0 20px;
+}
+
+.section-heading {
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #f42;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -.015em;
+}
+
+.latest-news-articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(75px, auto);
+  gap: 15px;
+}
+
+.article-container {
+  display: flex;
+  /*background-color: royalblue;*/
+  padding: 8px;
+}
+
+.article-image {
+  flex: 0 0 auto;
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-color: #000;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/WhatsApp-516x270.png);
+}
+
+.article-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.article-description > h5 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.article-description > h5:hover {
+  color: #f42;
+}
+
+.article-description > h6 {
+  color: #aaa;
+  font-size: 12px;
 }
