@@ -62,10 +62,6 @@ nav {
   width: 100%;
 }
 
-.nav-bottom-left-links {
-  visibility: hidden;
-}
-
 .nav-bottom-right-links {
   display: flex;
 }
@@ -88,6 +84,7 @@ nav {
 
 .nav-bottom-left-links {
   display: flex;
+  visibility: hidden;
   align-items: center;
   height: 100%;
 }
@@ -106,6 +103,10 @@ nav {
   padding: 0 12px;
   width: auto;
   justify-content: center;
+}
+
+.nav-top-right-links {
+  margin-right: 10px;
 }
 
 .nav-top-left-links,
@@ -127,6 +128,17 @@ nav {
 .nav-top-left-links > a:hover {
   color: white;
 }
+
+.announcement {
+  height: 30px;
+  background-color: #fd3;
+  box-shadow: 0 16px 48px rgba(0,0,0,.15);
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  width: 100vh;
+}
+
 @media (min-width: 768px) {
   nav {
     height: 80px;
