@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto&display=swap");
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 nav {
   display: flex;
@@ -166,3 +166,73 @@ main {
   }
 }
 /* end of the navbar styling */
+
+/* the header section styling */
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(30vh, 1fr);
+  gap: 8px;
+  padding: 4px;
+}
+.cover-story {
+  background-color: red;
+  /* height: 100px; */
+  z-index: 1;
+}
+
+.cover-story:first-child {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/akon-796x448.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover-story-gradient {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+
+  height: 100%;
+  width: 100%;
+  /* z-index: 2; */
+  text-decoration: none;
+}
+
+.cover-date {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 24px 0;
+}
+
+.cover-date > p {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cover-date > .cover-logo {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
+    no-repeat;
+  /* background-size: cover; */
+  width: 50%;
+  min-height: 112px;
+}
+
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: repeat(3, minmax(253px, 1fr));
+    grid-template-rows: repeat(2, minmax(137px, 1fr));
+  }
+  header div:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cover-story:first-child > a {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
