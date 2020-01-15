@@ -9,6 +9,7 @@ nav {
   display: flex;
   justify-content: stretch;
   height: 48px;
+  /* position: fixed; */
   border-bottom: 1px solid #eee;
 }
 
@@ -176,8 +177,14 @@ main {
 }
 
 .cover-story {
-  background: rgb(25,5,5);
-  background-image: linear-gradient(180deg, rgba(25,5,5,0.3561799719887955) 41%, rgba(0,0,0,1) 81%), url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/instagram-photoshop-hide-misinformation-796x417.jpg");
+  position: relative;
+  background: rgb(25, 5, 5);
+  background-image: linear-gradient(
+      180deg,
+      rgba(25, 5, 5, 0.3561799719887955) 41%,
+      rgba(0, 0, 0, 1) 81%
+    ),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/instagram-photoshop-hide-misinformation-796x417.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -213,10 +220,67 @@ main {
   padding: 0 2px;
 }
 
-/* the header section styling */
+.cover-story-top {
+  height: 100%;
+  display: none;
 
-/* End of header section */
-/* Start of latest news section */
+  /* display: none; */
+}
+
+.cover-logo {
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
+    no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 112px;
+  margin: 24px 0 0 24px;
+}
+
+@media (min-width: 768px) {
+  .top-stories-container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 30vh);
+  }
+
+  .cover-story:first-child {
+    grid-row: span 2;
+  }
+
+  .cover-story:first-child h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.84px;
+    cursor: pointer;
+    font-family: "roboto", sans-serif;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-stories-container {
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template-rows: repeat(2, 35vh);
+  }
+
+  .cover-story-top {
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cover-logo {
+    position: absolute;
+    /* top: 24px; */
+    left: -12px;
+  }
+  .cover-date {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+  }
+}
+
+/* the header section styling */
 
 .content-area {
   margin-top: 20px;
@@ -229,7 +293,7 @@ main {
 .content-container {
   margin: 60px auto 0;
   max-width: 1192px;
-  height: 200px;
+  /* height: 200px; */
   padding: 0 20px;
 }
 
@@ -318,4 +382,129 @@ main {
   .latest-news-articles {
     grid-template-columns: repeat(4, minmax(252px, 1fr));
   }
+}
+
+/* deals to invest section */
+
+.deals-heading {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.deals-heading > a {
+  color: rgb(255, 68, 34);
+  text-decoration: none;
+  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 11px;
+  font-weight: 400;
+}
+
+.section-heading::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/greater.svg);
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+  color: red;
+  margin-left: 8px;
+}
+
+.section-heading-container {
+  display: flex;
+}
+
+.deals-heading a:nth-child(2) {
+  margin-top: 0;
+}
+
+.deals-to-invest {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(10vh, 1fr);
+  gap: 4px;
+}
+
+.deals-invest-item {
+  padding: 8px;
+  background-color: rgba(255, 68, 34, 0.03);
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 10px;
+  z-index: 100;
+}
+
+.deals-info > p {
+  background: #f42;
+  color: #fff;
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  margin: 0 !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px !important;
+}
+
+.deal-price {
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  color: #000;
+  background: rgba(255, 68, 34, 0.08);
+}
+
+.deal-price > p:first-child {
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.deal-price > p:nth-child(2) {
+  color: #000;
+  opacity: 0.5;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.investment-card {
+  padding: 16px;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  flex-direction: column;
+}
+
+.investment-card > a {
+  margin: 0 1em 0.5em 0;
+  padding-left: 0.2em;
+  font-size: 13px;
+  color: #555;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.payment > i,
+.tencent > i {
+  height: 16px;
+  width: 16px;
+}
+
+.mobile-payment {
+  padding: 10px 16px 16px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mobile-payment > p {
+  color: #555;
+  font-weight: 400;
+}
+
+.mobile-payment > p > span {
+  color: #aaa;
 }
