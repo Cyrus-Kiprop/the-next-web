@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
 
-/* * {
-  box-sizing: border-box;
-} */
-
 nav {
   display: flex;
   justify-content: stretch;
   height: 48px;
-  /* position: fixed; */
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
   border-bottom: 1px solid #eee;
 }
 
 main {
   width: 100%;
+  padding-top: 48px;
   height: 100px;
 }
 
@@ -146,6 +146,9 @@ main {
   nav {
     height: 80px;
   }
+  main {
+    padding: 80px;
+  }
 
   .nav-bottom-right-links a:nth-child(2) {
     display: none;
@@ -166,6 +169,7 @@ main {
     display: none;
   }
 }
+
 /* end of the navbar styling */
 
 .top-stories-container {
@@ -223,8 +227,6 @@ main {
 .cover-story-top {
   height: 100%;
   display: none;
-
-  /* display: none; */
 }
 
 .cover-logo {
@@ -258,19 +260,16 @@ main {
 
 @media (min-width: 1024px) {
   .top-stories-container {
-    /* grid-template-columns: 2fr 1fr; */
     grid-template-rows: repeat(2, 250px);
   }
 
   .cover-story-top {
-    /* background-color: black; */
     display: flex;
     justify-content: space-between;
   }
 
   .cover-logo {
     position: absolute;
-    /* top: 24px; */
     left: -12px;
   }
   .cover-date {
@@ -293,7 +292,6 @@ main {
 .content-container {
   margin: 60px auto 0;
   max-width: 1192px;
-  /* height: 200px; */
   padding: 0 20px;
 }
 
@@ -317,7 +315,6 @@ main {
 .article-container {
   display: flex;
   position: relative;
-  /*background-color: royalblue;*/
   padding: 8px;
 }
 
@@ -359,7 +356,6 @@ main {
   .latest-news-articles {
     grid-template-columns: repeat(3, minmax(229px, 1fr));
     grid-auto-rows: minmax(219px, 244px);
-    /* gap: 15px; */
     gap: 0;
   }
 
@@ -372,7 +368,6 @@ main {
   }
 
   .article-image {
-    /* min-height:114px; */
     height: 40%;
     flex: 1 1 auto;
     width: 100%;
@@ -390,7 +385,6 @@ main {
 .deals-heading {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .deals-heading a {
@@ -429,7 +423,6 @@ main {
 .deals-to-invest {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-auto-rows: minmax(10vh, 1fr); */
   grid-auto-rows: 1fr;
   gap: 4px;
 }
@@ -563,6 +556,7 @@ main {
 }
 
 /* End of investments section */
+
 /* Start of subsections */
 
 .subsections-container {
@@ -571,14 +565,7 @@ main {
 }
 
 .subsection-item {
-  display: grid;
-  grid-template-columns: 1fr;
   padding: 8px;
-}
-
-.one-column-auto-rows {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .subsection-cover {
@@ -586,7 +573,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* height: 40vh; */
   min-height: calc(0.7 * 100vw);
   background: linear-gradient(
       180deg,
@@ -619,6 +605,7 @@ main {
 
 .subsection-title {
   position: relative;
+  overflow: hidden;
   height: 96px;
   background-color: rgba(255, 68, 34, 0.08);
   color: #f42;
@@ -684,7 +671,6 @@ main {
   }
 
   .subsection-cover {
-    /* height: 400px !important; */
     min-height: calc(0.7 * 50vw);
   }
 }
@@ -697,8 +683,6 @@ main {
   }
 
   .subsection-cover {
-    /* height: 400px !important; */
-    /*min-height: calc(0.7 * 33.3vw);*/
     min-height: 276px;
   }
 }
@@ -735,7 +719,6 @@ main {
   position: absolute;
   top: 8px;
   right: 8px;
-  /* background-position: ; */
   background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
 }
 .article-image-discount > p {
@@ -796,10 +779,6 @@ footer {
   flex-direction: column;
 }
 
-.footer-links-social {
-  /* margin-bottom: 1.5em; */
-}
-
 .footer-links-social > .footer-links-icons > a {
   border-radius: 50%;
   height: 40px;
@@ -827,7 +806,6 @@ footer {
   color: #aaa;
   text-decoration: none;
   cursor: pointer;
-  /* line-height: 24px; */
   font-size: 13px;
   font-weight: 500;
   font-family: "Rajdhani", sans-serif;
