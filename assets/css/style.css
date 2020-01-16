@@ -21,8 +21,8 @@ main {
 .nav-logo-container {
   width: 106px;
   text-align: center;
-  background-color: #f42;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
+  background-color: #f42;
 }
 
 .nav-logo-container > a {
@@ -34,7 +34,7 @@ main {
 }
 
 .fa-search {
-  color: #aaaaaa;
+  color: #aaa;
 }
 
 .fa-bars {
@@ -132,6 +132,57 @@ main {
   margin-left: 20px;
 }
 
+.deals-heading a {
+  color: rgb(255, 68, 34);
+  text-decoration: none;
+  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 11px;
+  font-weight: 400;
+}
+
+.investment-card > a {
+  margin: 0 1em 0.5em 0;
+  padding-left: 0.2em;
+  font-size: 13px;
+  color: #555;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.subsection-cover a {
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.subsection-title h5,
+.subsection-title a {
+  margin-right: 96px;
+}
+
+.subsection-title a {
+  display: inline-block;
+  color: #f42;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-links-menu > a {
+  text-transform: uppercase;
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Rajdhani", sans-serif;
+}
+
 .nav-top-left-links > a:hover {
   color: white;
 }
@@ -146,6 +197,7 @@ main {
   nav {
     height: 80px;
   }
+
   main {
     padding: 80px;
   }
@@ -183,7 +235,8 @@ main {
 .cover-story {
   position: relative;
   background: rgb(25, 5, 5);
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180deg,
       rgba(25, 5, 5, 0.3561799719887955) 41%,
       rgba(0, 0, 0, 1) 81%
@@ -230,7 +283,8 @@ main {
 }
 
 .cover-logo {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
+  background:
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
     no-repeat;
   background-size: contain;
   width: 50%;
@@ -272,6 +326,7 @@ main {
     position: absolute;
     left: -12px;
   }
+
   .cover-date {
     position: absolute;
     right: 24px;
@@ -343,6 +398,18 @@ main {
   margin-bottom: 10px;
 }
 
+.subsection-cover h5 {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.subsection-title h5 {
+  font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+}
+
 .article-description > h5:hover {
   color: #f42;
 }
@@ -385,15 +452,6 @@ main {
 .deals-heading {
   display: flex;
   flex-direction: column;
-}
-
-.deals-heading a {
-  color: rgb(255, 68, 34);
-  text-decoration: none;
-  line-height: 18px;
-  font-family: "Roboto", sans-serif;
-  margin-top: 11px;
-  font-weight: 400;
 }
 
 .deals-heading-links {
@@ -455,6 +513,23 @@ main {
   background: rgba(255, 68, 34, 0.08);
 }
 
+.mobile-payment > p {
+  color: #555;
+  font-weight: 400;
+}
+
+.article-image-discount > p {
+  color: black;
+  font-weight: 700;
+  position: relative;
+  top: 20px;
+  left: 8px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+}
+
 .deal-price > p:first-child {
   font-size: 18px;
   line-height: 1.25;
@@ -479,15 +554,6 @@ main {
   flex-direction: column;
 }
 
-.investment-card > a {
-  margin: 0 1em 0.5em 0;
-  padding-left: 0.2em;
-  font-size: 13px;
-  color: #555;
-  line-height: 22px;
-  text-decoration: none;
-}
-
 .payment > i,
 .tencent > i {
   height: 16px;
@@ -497,11 +563,6 @@ main {
 .mobile-payment {
   padding: 10px 16px 16px;
   font-size: 12px;
-  font-weight: 400;
-}
-
-.mobile-payment > p {
-  color: #555;
   font-weight: 400;
 }
 
@@ -574,7 +635,8 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   min-height: calc(0.7 * 100vw);
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180deg,
       rgba(25, 5, 5, 0.3561799719887955) 41%,
       rgba(0, 0, 0, 1) 81%
@@ -586,21 +648,8 @@ main {
   padding: 14px;
 }
 
-.subsection-cover a {
-  color: white;
-  font-family: sans-serif;
-  text-decoration: none;
-  font-size: 20px;
-}
-
 .subsection-cover > * {
-  padding: 3px 0px;
-}
-
-.subsection-cover h5 {
-  font-family: "Rajdhani", sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
+  padding: 3px 0;
 }
 
 .subsection-title {
@@ -612,32 +661,9 @@ main {
   padding: 8px 0 5px 8px;
 }
 
-.subsection-title h5,
-.subsection-title a {
-  margin-right: 96px;
-}
-
-.subsection-title h5 {
-  font-size: 16px;
-  font-family: "Rajdhani", sans-serif;
-  text-transform: uppercase;
-}
-
-.subsection-title a {
-  display: inline-block;
-  color: #f42;
-  margin-top: 10px;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
 .subsection-title img {
   height: 96px;
   width: 96px;
-
   position: absolute;
   right: 0;
   top: 0;
@@ -691,6 +717,7 @@ main {
 .different-image:first-child {
   background-image: url(https://cdnp1.stackassets.com/094463349fbe8da35ed352c337234dc98bf9e140/store/7d3ee25457b065d6a9dc84ccee09f7ef585713abc101354b0c1763b387af/sale_23857_primary_image.jpg);
 }
+
 .different-image-1 {
   background-image: url(https://cdnp0.stackassets.com/0bcaf472e484efc5812ba81caff99e8d92b3e6e9/store/a608033f5bd5c0926a52360990ea5bd8a7241593db592e096d16df200727/product_30218_product_shots4.jpg);
 }
@@ -721,27 +748,19 @@ main {
   right: 8px;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
 }
-.article-image-discount > p {
-  color: black;
-  font-weight: 700;
-  position: relative;
-  top: 20px;
-  left: 8px;
-  font-size: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  transform: rotate(45deg);
-}
+
 .story-dealprice {
   line-height: 20px;
   color: #aaa;
   vertical-align: baseline;
 }
+
 .story-dealprice-old {
   text-decoration: line-through;
   font-size: 13px;
   margin-right: 4px;
 }
+
 .story-dealprice-new {
   font-size: 16px;
   margin-right: 4px;
@@ -777,6 +796,7 @@ footer {
   font-size: 13px;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-links-social > .footer-links-icons > a {
@@ -799,20 +819,6 @@ footer {
 
 .footer-links-menu {
   margin: 35px;
-}
-
-.footer-links-menu > a {
-  text-transform: uppercase;
-  color: #aaa;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 500;
-  font-family: "Rajdhani", sans-serif;
-}
-
-.footer-legal {
-  font-family: "Roboto", sans-serif;
 }
 
 .footer-legal > span:nth-child(2) b {
