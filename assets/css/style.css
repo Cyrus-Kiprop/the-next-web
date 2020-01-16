@@ -392,13 +392,22 @@ main {
   /* justify-content: space-between; */
 }
 
-.deals-heading > a {
+.deals-heading a {
   color: rgb(255, 68, 34);
   text-decoration: none;
   line-height: 18px;
   font-family: "Roboto", sans-serif;
   margin-top: 11px;
   font-weight: 400;
+}
+
+.deals-heading-links { 
+  display: flex;
+  flex-direction: column;
+}
+
+.deals-heading-links a:first-child {
+  margin: 0;
 }
 
 .section-heading::after {
@@ -414,10 +423,6 @@ main {
 
 .section-heading-container {
   display: flex;
-}
-
-.deals-heading a:nth-child(2) {
-  margin-top: 0;
 }
 
 .deals-to-invest {
@@ -507,4 +512,163 @@ main {
 
 .mobile-payment > p > span {
   color: #aaa;
+}
+
+@media (min-width: 768px) {
+  .deals-heading-links {
+    flex-direction: row;
+  }
+
+  .deals-heading-links a {
+    margin: 0;
+  }
+
+  .with-separator::after {
+    content: "|";
+    display: inline-block;
+    color: inherit;
+    margin: 0 7px;
+  }
+
+  .deals-invest-item:last-child {
+    display: none;
+  }
+
+  .deals-to-invest {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .deals-heading {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .deals-heading > .section-heading {
+    margin-bottom: 0;
+  }
+
+  .deals-to-invest {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .deals-invest-item:last-child {
+    display: block;
+  }
+}
+
+/* End of investments section */
+/* Start of subsections */
+
+.subsections-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.subsection-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 8px;
+}
+
+.one-column-auto-rows {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.subsection-cover {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40vh;
+  min-height: calc(0.7 * 100vw);
+  background: linear-gradient(
+    180deg,
+    rgba(25, 5, 5, 0.3561799719887955) 41%,
+    rgba(0, 0, 0, 1) 81%
+  ), 
+  url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/facebook-368x276.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 1;
+  padding: 14px;
+}
+
+.subsection-cover a {
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.subsection-cover > * {
+  padding: 3px 0px;
+}
+
+.subsection-cover h5 {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.subsection-title {
+  position: relative;
+  height: 96px;
+  background-color: rgba(255,68,34,.08);
+  color: #f42;
+  padding: 8px 0 5px 8px;
+}
+
+.subsection-title h5,
+.subsection-title a {
+  margin-right: 96px;
+}
+
+.subsection-title h5 {
+  font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+}
+
+.subsection-title a {
+  display: inline-block;
+  color: #f42;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.subsection-title img {
+  height: 96px;
+  width: 96px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.subsection-list-container > li {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: 14px;
+  padding: 8px 0 8px 14px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.subsection-list-container > li::before {
+  background-color: #f42;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  top: 11px;
+  width: 4px;
 }
