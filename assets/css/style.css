@@ -222,8 +222,6 @@ main {
   }
 }
 
-/* end of the navbar styling */
-
 .top-stories-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -333,8 +331,6 @@ main {
     top: 24px;
   }
 }
-
-/* the header section styling */
 
 .content-area {
   margin-top: 20px;
@@ -446,8 +442,6 @@ main {
     grid-template-columns: repeat(4, minmax(252px, 1fr));
   }
 }
-
-/* deals to invest section */
 
 .deals-heading {
   display: flex;
@@ -616,10 +610,6 @@ main {
   }
 }
 
-/* End of investments section */
-
-/* Start of subsections */
-
 .subsections-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -713,7 +703,6 @@ main {
   }
 }
 
-/* the latest news section */
 .different-image:first-child {
   background-image: url(https://cdnp1.stackassets.com/094463349fbe8da35ed352c337234dc98bf9e140/store/7d3ee25457b065d6a9dc84ccee09f7ef585713abc101354b0c1763b387af/sale_23857_primary_image.jpg);
 }
@@ -772,8 +761,6 @@ main {
     display: none;
   }
 }
-
-/* the footer section */
 
 footer {
   display: flex;
