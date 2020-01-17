@@ -1,0 +1,826 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
+
+nav {
+  display: flex;
+  justify-content: stretch;
+  height: 48px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+main {
+  width: 100%;
+  padding-top: 48px;
+  height: 100px;
+}
+
+.nav-logo-container {
+  width: 106px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  background-color: #f42;
+}
+
+.nav-logo-container > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.fa-search {
+  color: #aaa;
+}
+
+.fa-bars {
+  color: #f42;
+}
+
+.nav-logo-container img {
+  width: 66px;
+  height: 16px;
+}
+
+.nav-top-links-container,
+.nav-bottom-links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-top-links-container {
+  height: 32px;
+  display: none;
+}
+
+.nav-bottom-links-container {
+  height: 48px;
+  align-items: flex-end;
+  border: 1px solid #eee;
+}
+
+.nav-links-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-bottom-right-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-bottom-right-links > a {
+  display: flex;
+  border-left: 1px solid #eee;
+  justify-content: center;
+  text-decoration: none;
+  height: 48px;
+  align-items: center;
+  width: 48px;
+}
+
+.nav-bottom-right-links i {
+  margin: 0 auto;
+  height: 16px;
+  width: 16px;
+}
+
+.nav-bottom-left-links {
+  display: none;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-bottom-left-links > a {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #aaa;
+  padding: 0 12px;
+  width: auto;
+  justify-content: center;
+}
+
+.nav-top-right-links {
+  margin-right: 10px;
+}
+
+.nav-top-left-links,
+.nav-top-right-links {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.nav-top-left-links > a,
+.nav-top-right-links > a {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.deals-heading a {
+  color: rgb(255, 68, 34);
+  text-decoration: none;
+  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 11px;
+  font-weight: 400;
+}
+
+.investment-card > a {
+  margin: 0 1em 0.5em 0;
+  padding-left: 0.2em;
+  font-size: 13px;
+  color: #555;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.subsection-cover a {
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.subsection-title h5,
+.subsection-title a {
+  margin-right: 96px;
+}
+
+.subsection-title a {
+  display: inline-block;
+  color: #f42;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-links-menu > a {
+  text-transform: uppercase;
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.nav-top-left-links > a:hover {
+  color: white;
+}
+
+@media (max-width: 811px) {
+  .nav-top-right-links {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    height: 80px;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  .nav-bottom-right-links a:nth-child(2) {
+    display: none;
+  }
+
+  .nav-top-links-container {
+    display: flex;
+    background-color: rgb(19, 19, 19);
+  }
+
+  .nav-bottom-left-links {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-logo-container {
+    display: none;
+  }
+}
+
+.top-stories-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 200px;
+  padding: 4px;
+  gap: 8px;
+}
+
+.cover-story {
+  position: relative;
+  background: rgb(25, 5, 5);
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(25, 5, 5, 0.3561799719887955) 41%,
+      rgba(0, 0, 0, 1) 81%
+    ),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/instagram-photoshop-hide-misinformation-796x417.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: aqua;
+  padding: 4px 4px 8px 4px;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+}
+
+.cover-story > * {
+  padding: 2px 4px;
+}
+
+.cover-story > h5 {
+  font-family: sans-serif;
+}
+
+.cover-story > h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cover-story-social-icons {
+  display: flex;
+  font-size: 14px;
+  color: rgb(190, 190, 190);
+  text-decoration-style: solid;
+}
+
+.cover-story-social-icons > * {
+  padding: 0 2px;
+}
+
+.cover-story-top {
+  height: 100%;
+  display: none;
+}
+
+.cover-logo {
+  background:
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
+    no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 112px;
+  margin: 24px 0 0 24px;
+}
+
+@media (min-width: 768px) {
+  .top-stories-container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 207px);
+  }
+
+  .cover-story:first-child {
+    grid-row: span 2;
+  }
+
+  .cover-story:first-child h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.84px;
+    cursor: pointer;
+    font-family: "roboto", sans-serif;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-stories-container {
+    grid-template-rows: repeat(2, 250px);
+  }
+
+  .cover-story-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cover-logo {
+    position: absolute;
+    left: -12px;
+  }
+
+  .cover-date {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+  }
+}
+
+.content-area {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.content-container {
+  margin: 60px auto 0;
+  max-width: 1192px;
+  padding: 0 20px;
+}
+
+.section-heading {
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #f42;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  letter-spacing: -0.015em;
+}
+
+.latest-news-articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(75px, auto);
+  gap: 15px;
+}
+
+.article-container {
+  display: flex;
+  position: relative;
+  padding: 8px;
+}
+
+.article-image {
+  flex: 0 0 auto;
+  display: block;
+  height: 75px;
+  width: 75px;
+  background-color: #000;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/WhatsApp-516x270.png);
+}
+
+.article-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.article-description > h5 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.subsection-cover h5 {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.subsection-title h5 {
+  font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+}
+
+.article-description > h5:hover {
+  color: #f42;
+}
+
+.article-description > h6 {
+  color: #aaa;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .latest-news-articles {
+    grid-template-columns: repeat(3, minmax(229px, 1fr));
+    grid-auto-rows: minmax(219px, 244px);
+    gap: 0;
+  }
+
+  .article-description {
+    margin-top: 13px;
+  }
+
+  .article-container {
+    flex-direction: column;
+  }
+
+  .article-image {
+    height: 40%;
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .latest-news-articles {
+    grid-template-columns: repeat(4, minmax(252px, 1fr));
+  }
+}
+
+.deals-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.deals-heading-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.deals-heading-links a:first-child {
+  margin: 0;
+}
+
+.section-heading::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/greater.svg);
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+  color: red;
+  margin-left: 8px;
+}
+
+.section-heading-container {
+  display: flex;
+}
+
+.deals-to-invest {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 4px;
+}
+
+.deals-invest-item {
+  padding: 8px;
+  background-color: rgba(255, 68, 34, 0.03);
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 10px;
+  z-index: 100;
+}
+
+.deals-info > p {
+  background: #f42;
+  color: #fff;
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  margin: 0 !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px !important;
+}
+
+.deal-price {
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  color: #000;
+  background: rgba(255, 68, 34, 0.08);
+}
+
+.mobile-payment > p {
+  color: #555;
+  font-weight: 400;
+}
+
+.article-image-discount > p {
+  color: black;
+  font-weight: 700;
+  position: relative;
+  top: 20px;
+  left: 8px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+}
+
+.deal-price > p:first-child {
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.deal-price > p:nth-child(2) {
+  color: #000;
+  opacity: 0.5;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.investment-card {
+  padding: 16px;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.25);
+  flex-direction: column;
+}
+
+.payment > i,
+.tencent > i {
+  height: 16px;
+  width: 16px;
+}
+
+.mobile-payment {
+  padding: 10px 16px 16px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mobile-payment > p > span {
+  color: #aaa;
+}
+
+@media (min-width: 768px) {
+  .deals-heading-links {
+    flex-direction: row;
+  }
+
+  .deals-heading-links a {
+    margin: 0;
+  }
+
+  .with-separator::after {
+    content: "|";
+    display: inline-block;
+    color: inherit;
+    margin: 0 7px;
+  }
+
+  .deals-invest-item:last-child {
+    display: none;
+  }
+
+  .deals-to-invest {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .deals-heading {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .deals-heading > .section-heading {
+    margin-bottom: 0;
+  }
+
+  .deals-to-invest {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .deals-invest-item:last-child {
+    display: block;
+  }
+}
+
+.subsections-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.subsection-item {
+  padding: 8px;
+}
+
+.subsection-cover {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: calc(0.7 * 100vw);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(25, 5, 5, 0.3561799719887955) 41%,
+      rgba(0, 0, 0, 1) 81%
+    ),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/facebook-368x276.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 1;
+  padding: 14px;
+}
+
+.subsection-cover > * {
+  padding: 3px 0;
+}
+
+.subsection-title {
+  position: relative;
+  overflow: hidden;
+  height: 96px;
+  background-color: rgba(255, 68, 34, 0.08);
+  color: #f42;
+  padding: 8px 0 5px 8px;
+}
+
+.subsection-title img {
+  height: 96px;
+  width: 96px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.subsection-list-container > li {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: 13px;
+  padding: 8px 0 8px 14px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.subsection-list-container > li::before {
+  background-color: #f42;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  top: 11px;
+  width: 4px;
+}
+
+@media (min-width: 768px) {
+  .subsections-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  .subsection-cover {
+    min-height: calc(0.7 * 50vw);
+  }
+}
+
+@media (min-width: 1024px) {
+  .subsections-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  .subsection-cover {
+    min-height: 276px;
+  }
+}
+
+.different-image:first-child {
+  background-image: url(https://cdnp1.stackassets.com/094463349fbe8da35ed352c337234dc98bf9e140/store/7d3ee25457b065d6a9dc84ccee09f7ef585713abc101354b0c1763b387af/sale_23857_primary_image.jpg);
+}
+
+.different-image-1 {
+  background-image: url(https://cdnp0.stackassets.com/0bcaf472e484efc5812ba81caff99e8d92b3e6e9/store/a608033f5bd5c0926a52360990ea5bd8a7241593db592e096d16df200727/product_30218_product_shots4.jpg);
+}
+
+.different-image-2 {
+  background-image: url(https://cdnp1.stackassets.com/4c6357549bbe196eac7a2a550f3cf2a380f39e44/store/7d5851d962ea8a62a7e9939f0efebc686b69d83821b63060d3109048021b/sale_19399_primary_image.jpg);
+}
+
+.different-image-3 {
+  background-image: url(https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg);
+}
+
+.different-image-5 {
+  background-image: url(https://cdnp3.stackassets.com/ba7cb2479d7bb8b5a7fecebb6af74ad77f9f74fa/store/c350066a7652411d43ac5e6a9b3caf8c8aaec349093c09728483b211ca82/sale_19370_primary_image.jpg);
+}
+
+.different-image-6 {
+  background-image: url(https://cdnp3.stackassets.com/f7975567bfde79648a2dfc25a7117b1f4e64198a/store/3d45335559eb6db6de1e1dae35734f2b2636b106824e7db3c2ee76b386ba/sale_25035_primary_image.jpg);
+}
+
+.article-image-discount {
+  height: 80px;
+  text-decoration: none;
+  width: 80px;
+  background-size: contain;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+}
+
+.story-dealprice {
+  line-height: 20px;
+  color: #aaa;
+  vertical-align: baseline;
+}
+
+.story-dealprice-old {
+  text-decoration: line-through;
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.story-dealprice-new {
+  font-size: 16px;
+  margin-right: 4px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .article-image-discount {
+    display: none;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-links {
+  background-color: #131313;
+  padding: 2.5em 0 1.7em;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-legal {
+  color: #aaa;
+  background-color: #000;
+  padding: 2.5em 0;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-links-social > .footer-links-icons > a {
+  border-radius: 50%;
+  height: 40px;
+  background-color: #333;
+  width: 40px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-links-social > .footer-links-icons > a > i {
+  background-color: white;
+  color: #333;
+  height: 16px;
+  width: 16px;
+}
+
+.footer-links-menu {
+  margin: 35px;
+}
+
+.footer-legal > span:nth-child(2) b {
+  color: #f42;
+}
+
+.footer-legal span:first-child img,
+.footer-legal span:last-child img {
+  height: 9px;
+  margin: 0 0 0 1px;
+}
+
+@media (min-width: 768px) {
+  .footer-legal {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
